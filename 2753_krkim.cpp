@@ -4,28 +4,16 @@ using namespace std;
 int main()
 {
     int A;
-    int B;
 
     
     cin >> A ;
-   	cin >> B;
-   	
-   	
-    if(A > 0 & B > 0 ){
+   
+    if((A % 4 == 0 &&  A % 100 != 0) || (A % 4 == 0 && A % 400 == 0)  ){
     	cout << "1" << endl;
 	} 
-	else if (A < 0 & B > 0  )
+	else
 	{
-		cout << "2" << endl;
-	}
-		else if (A < 0 & B < 0  )
-	{
-		cout << "3" << endl;
-	}
-	
-	else if (A > 0 & B < 0 )
-	{
-		cout << "4" << endl;
+		cout << "0" << endl;
 	}
 	
     return 0;
