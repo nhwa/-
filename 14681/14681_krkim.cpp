@@ -1,31 +1,25 @@
 #include<iostream>
+#include<time.h>
 using namespace std;
 
 int main()
 {
-    int A;
-    int B;
+    int H;
+    int M;
 
-    
-    cin >> A ;
-   	cin >> B;
+//	while ( M <= 60 & H <=24)    
+//    {
+    cin >> H ;
+   	cin >> M;
    	
-   	
-    if(A > 0 & B > 0 ){
-    	cout << "1" << endl;
-	} 
-	else if (A < 0 & B > 0  )
+
+
+	if(M - 45 < 0)
 	{
-		cout << "2" << endl;
-	}
-		else if (A < 0 & B < 0  )
+			cout << H << M  <<endl;
+	}else 
 	{
-		cout << "3" << endl;
-	}
-	
-	else if (A > 0 & B < 0 )
-	{
-		cout << "4" << endl;
+		cout << H-1 << M - 45 <<endl;
 	}
 	
     return 0;
