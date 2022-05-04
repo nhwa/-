@@ -2,27 +2,19 @@
 using namespace std;
 int main()
 {
-	int count;
+	int number;
+	int sum = 0;
 	
-	int A;
-	int B;
+	cin >> number;
 	
-	int array []= {};
-		
-	cin >> count;
-	
-	for (int i = 0; i < count ; i++ )
+	for(int i= 1; i <= number; i ++ )
 	{
-			cin >> A;
-			cin >> B;	
-		    cout << A + B << endl;
-	}
-
-//	
-//	for (int j = 1; j <= count; j++ ){
-//	
-//	}
 		
+		sum =sum + i;
+			//cout << sum << endl;
+	}
+	
+	cout << sum << endl;	
 	
 	return 0;
 }
