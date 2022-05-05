@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class q_2577 {
+public class Main {
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -20,11 +20,17 @@ public class q_2577 {
 
         for(int i=0; i< nums_count.length; i++) {
                 for(int j=0; j< number_type.length; j++){
-                    if(number_type[j] == i){
-                        nums_count[j]++;
+                    if(number_type[j]-'0' == i){
+                        nums_count[i] = nums_count[i]+1;
                     }
                 }
         }
-        System.out.println(nums_count);
+        for(int i=0; i<nums_count.length; i++){
+            bw.write(String.valueOf(nums_count[i]));
+            bw.newLine();
+        }
+        br.close();
+        bw.flush();
+        bw.close();
     }
 }
