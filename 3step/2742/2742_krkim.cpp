@@ -10,13 +10,14 @@ int main()
 	
 	for (int i = 1; i <= count; i++  )
 	{
-		for(int j =i; j <=count; j++)
+		for(int j =count; j <=count; j--)
 		{
 			cout << i <<  ":"<< j <<"*";
 			//cout << "\n";
 		}
 			cout << "\n";
 	}	
+	
 
 	
 	

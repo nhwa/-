@@ -4,20 +4,21 @@ int main()
 {
 	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	int count;
-	
-	int A;
-	int B;
-	
 		
 	cin >> count;
-	
-	for (int i = 0; i < count ; i++ )
-	{
-			cin >> A;
-			cin >> B;	
-		    cout << "Case #" << i+1 << ": " << A << " + " << B << " = "<< A + B << "\n";
-	}
 
+		for(int j = 1; j <= count; j++)
+		{
+			for(int i = 1; i<=count; i++ )
+			{
+				while(i !=j){
+				cout << "*" ;	
+				}
+			 	cout << endl;
+			 			
+			}
+			//cout << j << endl;
+		}
 
 	
 	return 0;
