@@ -1,25 +1,44 @@
 #include<iostream>
 using namespace std;
+
 int main()
 {
 	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	int count;
-		
-	cin >> count;
 
-		for(int j = 1; j <= count; j++)
+//	int N;
+//	int X;
+//
+//	cin >> N;
+//	cin >> X;
+//	
+//	int array[] = {};
+
+	int Test[] = {};
+	
+//	for(int i = 0; i < 5; i++){
+//		cin >> Test[i];
+//		//cout << Test[i] << " ";
+//	}
+	int N = 7;
+
+	while(1){
+		if(N !=0){
+			for(int i =0; i < N; i++){
+			cin >> Test[i];
+			N--;
+						}
+		 }else
 		{
-			for(int i = 1; i<=count; i++ )
-			{
-				while(i !=j){
-				cout << "*" ;	
-				}
-			 	cout << endl;
-			 			
-			}
-			//cout << j << endl;
+			break;
 		}
+		
+	
+
+	}
 
 	
+
+
 	return 0;
+
 }
